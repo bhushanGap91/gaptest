@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-image: url("bmw.jpg");
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+	
+	div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	color:white;
+}
+	input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+	div.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+	
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <div class="img">
+  <a target="_blank" href="img_fjords.jpg">
+    <img src="bmw.jpg" alt="Trolltunga Norway" width="300" height="200">
+  </a>
+  <div class="desc">Awsome color</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="bmw.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Fatest speed</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="bmw.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Strike for ever</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="bmw.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Looking good </div>
+</div><br><br>
+     
+	<div id="form">
+  <form action="action_page.php">
+    <label for="fname" style="color:white"><br><br><br><br><br><br><br><br>First Name</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lname" style="color:white">Last Name</label>
+    <input type="text" id="lname" name="lastname">
+
+    <label for="country" style="color:white">State</label>
+    <select id="country" name="country">
+      <option value="canada">India</option>
+		<option value="australia">Australia</option>
+      
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+	
+</div>
+	
+
+</body>
+</html>
